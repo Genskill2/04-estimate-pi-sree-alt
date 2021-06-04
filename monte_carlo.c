@@ -38,6 +38,17 @@ int main(void) {
     }
   }
 }
-
+float mc_pi (int count )
+{
+  float x =frandom();
+  float y =frandom();
+  if(sqrt(x*y+y*y)<=1)
+  {
+    circle++:
+  }
+}
+float area = (float)(4*circle)/(count);
+return area;
+)
 
 
