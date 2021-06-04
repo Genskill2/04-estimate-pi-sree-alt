@@ -23,20 +23,11 @@ int main(void) {
     }
   }
 }
-float mc_pi(int count)
-{
-	float circle=0;
-	for(int i=0;i<count;i++)
-	{
-		
-		float x = frandom();
-		float y = frandom();
-		if(sqrt(x*x+y*y)<=1)
-		{
-			circle++;
-		}
-	}
-	float area =(float) (4*circle)/(count);
-	return area;
-}
-
+float wallis_pi(int n)
+  { float p=1;
+  for(int i=1;i<=n ;i++)
+  {float e=4*i*i;
+  float k=(float)e/(e-1);
+  p=p*k;
+  }return p*2;
+  }
